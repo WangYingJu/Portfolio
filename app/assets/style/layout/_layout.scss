@@ -1,0 +1,26 @@
+.sidebar {
+  width: 300px;
+  height: 100vh;
+
+  .email {
+    font-size: 14px;
+    line-height: 17px;
+    color: $gray-600;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+
+  .nav-link {
+    &:hover {
+      background-color: $gray-400;
+    }
+
+    &.active {
+      border-left: 4px solid $success;
+
+      &:hover {
+        background-color: unset;
+      }
+    }
+  }
+}

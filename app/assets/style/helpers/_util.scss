@@ -1,0 +1,18 @@
+/* Rules for sizing the icon. */
+.material-icons,
+.material-symbols-outlined {
+  vertical-align: middle;
+  font-size: 24px;
+}
+
+.line-height-19 {
+  line-height: 19px;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.filter-yellow {
+  fill: $yellow;
+}
