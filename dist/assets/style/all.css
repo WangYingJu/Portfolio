@@ -44750,10 +44750,6 @@ body {
      object-fit: cover;
 }
 
-.filter-yellow {
-  fill: #ffc107;
-}
-
 .sidebar {
   width: 300px;
   height: 100vh;
@@ -44772,64 +44768,40 @@ body {
 }
 
 .sidebar .nav-link.active {
-  border-left: 4px solid #198754;
+  color: #ffc107;
 }
 
 .sidebar .nav-link.active:hover {
   background-color: unset;
 }
 
-#About .personal-photo {
+.hero {
+  background: url(../images/iriswang.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+}
+
+#about .personal-photo {
   width: 1rem;
 }
 
-#Resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: white;
-  border: 2px solid red;
-}
-
-#Portfolio h3, #Portfolio .h3 {
+#resume .resume-item {
   position: relative;
+  padding-left: 20px;
 }
 
-#Portfolio h3::before, #Portfolio .h3::before {
+#resume .resume-item::before {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   border-radius: 50px;
-  left: -9px;
+  left: -10.5px;
   top: 0;
   background: white;
-  border: 2px solid red;
-}
-
-.assignment-body .assignment-left {
-  width: 320px;
-}
-
-.assignment-body .assignment-left .title {
-  margin-bottom: 6px;
-}
-
-.assignment-body .assignment-right {
-  width: 584px;
-}
-
-.assignment-body .assignment-right .title {
-  line-height: 24px;
-}
-
-.assignment-body .assignment-right .comment-content {
-  font-size: 14px;
-  line-height: 1.5;
+  border: 2px solid #ced4da;
 }
 
 .badge {

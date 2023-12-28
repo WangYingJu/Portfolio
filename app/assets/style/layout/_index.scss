@@ -1,65 +1,36 @@
-#About {
+.hero {
+  background: url(../images/iriswang.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+}
+
+#about {
   .personal-photo {
     width: 1rem;
   }
 }
 
-#Resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: white;
-  border: 2px solid red;
-}
-
-#Portfolio {
-  h3 {
+#resume {
+  .resume-item {
     position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      border-radius: 50px;
-      left: -9px;
-      top: 0;
-      background: white;
-      border: 2px solid red;
-    }
-  }
-}
-
-
-.assignment-body {
-  .assignment-left {
-    width: 320px;
-
-    .title {
-      margin-bottom: 6px;
-    }
+    padding-left: 20px;
   }
 
-  .assignment-right {
-    width: 584px;
-
-    .title {
-      line-height: 24px;
-    }
-
-    .comment-content {
-      font-size: 14px;
-      line-height: 1.5;
-    }
-
+  .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    left: -10.5px;
+    top: 0;
+    background: white;
+    border: 2px solid $gray-400;
   }
 }
 
 .badge {
-  // font-size: 14px;
   font-family: 'Roboto Mono', monospace;
 }

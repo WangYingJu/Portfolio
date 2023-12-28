@@ -16,7 +16,8 @@
     }
 
     &.active {
-      border-left: 4px solid $success;
+      // border-left: 4px solid $yellow;
+      color: $yellow;
 
       &:hover {
         background-color: unset;
