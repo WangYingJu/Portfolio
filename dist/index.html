@@ -4,10 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Iris_Portfolio">
+  <meta name="description" content="王盈茹的個人簡歷">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bolaslien.github.io/">
+  <meta property="og:title" content="Iris_Portfolio">
+  <meta property="og:description" content="王盈茹的個人簡歷">
+  <meta property="og:image" content="./assets/images/profile.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://bolaslien.github.io/">
+  <meta property="twitter:title" content="Iris_Portfolio">
+  <meta property="twitter:description" content="王盈茹的個人簡歷">
+  <meta property="twitter:image" content="./assets/images/profile.jpg">
+
   <title>
     Iris_Portfolio
   </title>
+
   <!-- material icon -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet"
@@ -19,17 +37,19 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
+
   <!-- css -->
   <link rel="stylesheet" href="./assets/style/all.css">
 
   <!-- aos -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <!-- bootstrap icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 
 <body style="position: relative;" id="page-top">
-  <nav class="navbar navbar-expand-lg d-lg-flex flex-lg-column justify-content-lg-center bg-light fixed-top"
+  <nav class="navbar navbar-expand-lg d-lg-flex flex-lg-column justify-content-lg-center bg-secondary fixed-top"
     id="sideNav">
     <a class="navbar-brand js-scroll-trigger p-0 m-0" href="#page-top">
       <span class="d-block d-lg-none fw-bold line-height-19 px-8 py-2">Portfolio</span>
@@ -55,7 +75,7 @@
 
 
   
-<div class="d-flex flex-column m-0 ms-lg-70 p-0 pb-24">
+<div class="d-flex flex-column m-0 ms-lg-70 p-0">
   <section id="home" class="hero d-flex align-items-center pt-12 mb-24">
     <div class="container">
       <h2 class="text-center fs-12 fw-bold lh-base">Iris Wang</h2>
@@ -356,76 +376,22 @@
     </div>
   </section>
 
-  <section id="contact" class="container px-8 pb-8">
-    <h3 class="text-center fs-8 fw-bold lh-base">Contact</h3>
-    <p class="text-center fs-4 lh-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti minima
-      laudantium ex eveniet quod dignissimos
-      ab at omnis pariatur ea ex eveniet quod dignissimos
-      ab at omnis pariatur ea.</p>
-    <div class="row justify-content-center aos-init aos-animate" data-aos="fade-in">
-      <div class="col-lg-4">
-        <div class="info">
-          <div class="address row align-items-center mb-6">
-            <i class="bi bi-geo-alt-fill text-warning"></i>
-            <div class="col-10">
-              <h4>Location:</h4>
-              <p class="m-0">Sanchong Dist., New Taipei City, Taiwan (R.O.C.)</p>
-            </div>
-          </div>
-
-          <div class="email row align-items-center mb-6">
-            <i class="bi bi-envelope-at-fill text-warning"></i>
-            <div class="col-10">
-              <h4>Email:</h4>
-              <p class="m-0">iriswang1091@gmail.com</p>
-            </div>
-          </div>
-
-          <div class="phone">
-            <h4>Call:</h4>
-            <p>+886 919 941 076</p>
-          </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28912.322909702943!2d121.46547432869465!3d25.066621028872046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a8de05921eb3%3A0xe818cd4640a88cc6!2zMjQx5paw5YyX5biC5LiJ6YeN5Y2A!5e0!3m2!1szh-TW!2stw!4v1702365925735!5m2!1szh-TW!2stw"
-            width="100%" height="290" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+  <footer id="contact" class="bg-light">
+    <div class="container p-16 text-center">
+      <h3 class="fs-8 fw-bold lh-base">王盈茹 Iris Wang</h3>
+      <div class="d-flex justify-content-center gap-4 mb-8">
+        <a href="mailto:iriswang1091@gmail.com" class="social-links">
+          <i class="bi bi-envelope-at-fill text-white fs-6 m-2"></i>
+        </a>
+        <a href="https://github.com/WangYingJu" class="social-links" target="_blank">
+          <i class="bi bi-github text-warning text-white fs-6 m-2"></i>
+        </a>
       </div>
-
-      <div class="col-lg-6 align-self-center mt-5 mt-lg-0">
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-          <div class="row">
-            <div class="form-group col-md-6">
-              <label for="name">Your Name</label>
-              <input type="text" name="name" class="form-control" id="name" required>
-            </div>
-            <div class="form-group col-md-6">
-              <label for="email">Your Email</label>
-              <input type="email" class="form-control" name="email" id="email" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" class="form-control" name="subject" id="subject" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" name="message" rows="10" required></textarea>
-          </div>
-          <!-- <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div> -->
-          <div class="text-center">
-            <button type="submit">Send Message</button>
-          </div>
-        </form>
+      <div class="fs-4 lh-base">
+        &copy; Copyright <strong><span>Iris Wang</span></strong>. All Rights Reserved
       </div>
     </div>
-  </section>
-
-  <a href="page1.html">點我到page1</a>
+  </footer>
 </div>
 
 
@@ -437,31 +403,6 @@
       AOS.init();
     </script>
 
-    <script>
-      window.addEventListener('DOMContentLoaded', event => {
-        // Activate Bootstrap scrollspy on the main nav element
-        const sideNav = document.body.querySelector('#sideNav');
-        if (sideNav) {
-          new bootstrap.ScrollSpy(document.body, {
-            target: '#sideNav',
-            rootMargin: '0px 0px',
-          });
-        };
-
-        // Collapse responsive navbar when toggler is visible
-        const navbarToggler = document.body.querySelector('.navbar-toggler');
-        const responsiveNavItems = [].slice.call(
-          document.querySelectorAll('#navbarResponsive .nav-link')
-        );
-        responsiveNavItems.map(function (responsiveNavItem) {
-          responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-              navbarToggler.click();
-            }
-          });
-        });
-      });
-    </script>
 </body>
 
 </html>

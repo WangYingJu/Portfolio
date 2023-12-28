@@ -4,10 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Iris_Portfolio">
+  <meta name="description" content="王盈茹的個人簡歷">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bolaslien.github.io/">
+  <meta property="og:title" content="Iris_Portfolio">
+  <meta property="og:description" content="王盈茹的個人簡歷">
+  <meta property="og:image" content="./assets/images/profile.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://bolaslien.github.io/">
+  <meta property="twitter:title" content="Iris_Portfolio">
+  <meta property="twitter:description" content="王盈茹的個人簡歷">
+  <meta property="twitter:image" content="./assets/images/profile.jpg">
+
   <title>
     <%- title %>
   </title>
+
   <!-- material icon -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet"
@@ -19,17 +37,19 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
+
   <!-- css -->
   <link rel="stylesheet" href="./assets/style/all.css">
 
   <!-- aos -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <!-- bootstrap icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 
 <body style="position: relative;" id="page-top">
-  <nav class="navbar navbar-expand-lg d-lg-flex flex-lg-column justify-content-lg-center bg-light fixed-top"
+  <nav class="navbar navbar-expand-lg d-lg-flex flex-lg-column justify-content-lg-center bg-secondary fixed-top"
     id="sideNav">
     <a class="navbar-brand js-scroll-trigger p-0 m-0" href="#page-top">
       <span class="d-block d-lg-none fw-bold line-height-19 px-8 py-2">Portfolio</span>
@@ -65,31 +85,6 @@
       AOS.init();
     </script>
 
-    <script>
-      window.addEventListener('DOMContentLoaded', event => {
-        // Activate Bootstrap scrollspy on the main nav element
-        const sideNav = document.body.querySelector('#sideNav');
-        if (sideNav) {
-          new bootstrap.ScrollSpy(document.body, {
-            target: '#sideNav',
-            rootMargin: '0px 0px',
-          });
-        };
-
-        // Collapse responsive navbar when toggler is visible
-        const navbarToggler = document.body.querySelector('.navbar-toggler');
-        const responsiveNavItems = [].slice.call(
-          document.querySelectorAll('#navbarResponsive .nav-link')
-        );
-        responsiveNavItems.map(function (responsiveNavItem) {
-          responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-              navbarToggler.click();
-            }
-          });
-        });
-      });
-    </script>
 </body>
 
 </html>
