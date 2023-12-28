@@ -1,27 +1,29 @@
-.sidebar {
+#sideNav {
   width: 300px;
   height: 100vh;
 
-  .email {
-    font-size: 14px;
-    line-height: 17px;
-    color: $gray-600;
-    font-weight: normal;
-    margin-bottom: 0;
+  @media(max-width:991px) {
+    width: 100vw;
+    height: unset;
+
+  }
+
+  .navbar-toggler-icon {
+    color: $dark !important;
   }
 
   .nav-link {
     &:hover {
-      background-color: $gray-400;
+      // background-color: $gray-400;
+      color: $gray-500;
     }
 
     &.active {
-      // border-left: 4px solid $yellow;
       color: $yellow;
 
-      &:hover {
-        background-color: unset;
-      }
+      // &:hover {
+      //   background-color: unset;
+      // }
     }
   }
 }

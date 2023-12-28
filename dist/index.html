@@ -28,39 +28,34 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 
-<body style="position: relative;" data-bs-spy="scroll" data-bs-target="#navbar">
-  <div class="sidebar py-8 d-flex flex-column bg-light fixed-top">
-    <a href="#">
-      <h1 class="mb-8 ms-8"><img width="133" src="./assets/images/logo-ANSWER.svg" alt=""></h1>
+<body style="position: relative;" id="page-top">
+  <nav class="navbar navbar-expand-lg d-lg-flex flex-lg-column justify-content-lg-center bg-light fixed-top"
+    id="sideNav">
+    <a class="navbar-brand js-scroll-trigger p-0 m-0" href="#page-top">
+      <span class="d-block d-lg-none fw-bold line-height-19 px-8 py-2">Portfolio</span>
+      <img class="img-fluid rounded-circle border-danger border-5 px-12 mb-10 d-none d-lg-block"
+        src="./assets/images/profile.jpg" alt="page-top" />
     </a>
-    <nav id="navbar" class="nav flex-column gap-6">
-      <a href="#home" class="nav-link fs-4 fw-bold line-height-19 px-8 py-2"><span class="material-icons me-4">
-          assessment</span>Home</a>
-      <a href="#about" class="nav-link fs-4 fw-bold line-height-19 px-8 py-2"><span class="material-icons me-4">
-          question_answer</span>About</a>
-      <a href="#professional-skill" class="nav-link fs-4 fw-bold line-height-19 px-8 py-2" aria-current="page"><span
-          class="material-icons me-4">
-          question_answer</span>Professional-skill</a>
-      <a href="#resume" class="nav-link fs-4 fw-bold line-height-19 px-8 py-2" aria-current="page"><span
-          class="material-icons me-4">
-          question_answer</span>Resume</a>
-      <a href="#portfolio" class="nav-link fs-4 fw-bold line-height-19 px-8 py-2"><span class="material-icons me-4">
-          question_answer</span>Portfolio</a>
-      <a href="#contact" class="nav-link fs-4 fw-bold line-height-19 px-8 py-2"><span class="material-icons me-4">
-          question_answer</span>Contact</a>
-    </nav>
-    <div class="d-flex mt-auto align-items-center ms-8">
-      <img class="rounded-circle object-fit-cover me-4" width="40" height="40" src="./assets/images/andychen.jpeg"
-        alt="">
-      <div>
-        <h2 class="fs-4 fw-bold mb-1">Andy Chen</h2>
-        <h3 class="email">andy0401@mail.com</h3>
-      </div>
+    <button class="navbar-toggler me-8" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list fs-8"></i>
+    </button>
+    <div class="collapse navbar-collapse flex-grow-0" id="navbarResponsive">
+      <nav class="navbar-nav d-lg-flex flex-lg-column align-items-lg-center">
+        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2" href="#home">Home</a>
+        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2" href="#about">About</a>
+        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2"
+          href="#professional-skill">Professional-skill</a>
+        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2" href="#resume">Resume</a>
+        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2" href="#portfolio">Portfolio</a>
+        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2" href="#contact">Contact</a>
+      </nav>
     </div>
-  </div>
+  </nav>
+
 
   
-<div class="d-flex flex-column m-0 ms-70 p-0 pb-24">
+<div class="d-flex flex-column m-0 ms-lg-70 p-0 pb-24">
   <section id="home" class="hero d-flex align-items-center pt-12 mb-24">
     <div class="container">
       <h2 class="text-center fs-12 fw-bold lh-base">Iris Wang</h2>
@@ -443,9 +438,29 @@
     </script>
 
     <script>
-      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-        target: '#navbar'
-      })
+      window.addEventListener('DOMContentLoaded', event => {
+        // Activate Bootstrap scrollspy on the main nav element
+        const sideNav = document.body.querySelector('#sideNav');
+        if (sideNav) {
+          new bootstrap.ScrollSpy(document.body, {
+            target: '#sideNav',
+            rootMargin: '0px 0px',
+          });
+        };
+
+        // Collapse responsive navbar when toggler is visible
+        const navbarToggler = document.body.querySelector('.navbar-toggler');
+        const responsiveNavItems = [].slice.call(
+          document.querySelectorAll('#navbarResponsive .nav-link')
+        );
+        responsiveNavItems.map(function (responsiveNavItem) {
+          responsiveNavItem.addEventListener('click', () => {
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+              navbarToggler.click();
+            }
+          });
+        });
+      });
     </script>
 </body>
 

@@ -44750,29 +44750,28 @@ body {
      object-fit: cover;
 }
 
-.sidebar {
+#sideNav {
   width: 300px;
   height: 100vh;
 }
 
-.sidebar .email {
-  font-size: 14px;
-  line-height: 17px;
-  color: #6c757d;
-  font-weight: normal;
-  margin-bottom: 0;
+@media (max-width: 991px) {
+  #sideNav {
+    width: 100vw;
+    height: unset;
+  }
 }
 
-.sidebar .nav-link:hover {
-  background-color: #ced4da;
+#sideNav .navbar-toggler-icon {
+  color: #212529 !important;
 }
 
-.sidebar .nav-link.active {
+#sideNav .nav-link:hover {
+  color: #adb5bd;
+}
+
+#sideNav .nav-link.active {
   color: #ffc107;
-}
-
-.sidebar .nav-link.active:hover {
-  background-color: unset;
 }
 
 .hero {
