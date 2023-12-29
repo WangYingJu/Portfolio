@@ -44751,7 +44751,7 @@ body {
 }
 
 #sideNav {
-  width: 300px;
+  width: 242px;
   height: 100vh;
 }
 
@@ -44776,7 +44776,7 @@ body {
 }
 
 .hero {
-  background: url(../images/iriswang.jpg) no-repeat;
+  background: url(../images/home.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   height: 70vh;
