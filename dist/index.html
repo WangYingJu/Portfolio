@@ -111,12 +111,12 @@
           </div>
           <div class="col-lg-4">
             <ul class="list-unstyled">
-              <li class="mb-4"><span class="material-icons text-warning ms-2">
+              <li class="mb-4 light-up"><span class="material-icons text-warning ms-2">
                   chevron_right
                 </span><a href="mailto:iriswang1091@gmail.com"
                   class="text-warning text-decoration-none"><strong>Email：</strong><i
                     class="bi bi-envelope-at-fill text-warning"></i></a></li>
-              <li class="mb-4"><span class="material-icons text-warning ms-2">
+              <li class="mb-4 light-up"><span class="material-icons text-warning ms-2">
                   chevron_right
                 </span><a href="https://github.com/WangYingJu" target="_blank"
                   class="text-warning text-decoration-none"><strong>GitHub：</strong><i
@@ -144,7 +144,7 @@
           <ul class="list-unstyled">
             <li class="mb-4"><span class="material-icons text-warning ms-2">
                 chevron_right
-              </span>Sass + Bootstrap5 規劃響應式網頁版型</li>
+              </span>SCSS + Bootstrap5 規劃響應式網頁版型</li>
             <li class="mb-4"><span class="material-icons text-warning ms-2">
                 chevron_right
               </span>善用 jQuery Plugin 整合第三方插件動畫效果</li>
@@ -256,229 +256,105 @@
     </div>
   </section>
 
-  <!-- <section id="portfolio" class="container px-8 pb-8 mb-24 portfolio">
-    <h3 class="text-center fs-8 fw-bold lh-base">Portfolio</h3>
-    <p class="text-center fs-4 lh-base mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti minima
-      laudantium ex eveniet quod dignissimos
-      ab at omnis pariatur ea ex eveniet quod dignissimos
-      ab at omnis pariatur ea.</p>
+  <section id="portfolio" class="portfolio container">
+    <h3 class="text-center fs-8 fw-bold lh-base mb-8">Portfolio</h3>
+
     <div class="row aos-init aos-animate" data-aos="fade-up">
       <div class="col-lg-12 d-flex justify-content-center">
-        <ul id="portfolio-flters" class="d-flex list-unstyled py-1 px-5 rounded-pill bg-light">
-          <li data-filter="*" class="py-1 px-5">All</li>
-          <li data-filter=".filter-app" class="py-1 px-5 filter-active">App</li>
-          <li data-filter=".filter-card" class="py-1 px-5">Card</li>
-          <li data-filter=".filter-web" class="py-1 px-5">Web</li>
+        <ul class="portfolio-flters">
+          <li data-filter="*" class="filter-active py-1 px-5">All</li>
+          <li data-filter=".filter-Vue" class="py-1 px-5">Vue</li>
+          <li data-filter=".filter-jQuery" class="py-1 px-5">jQuery</li>
+          <li data-filter=".filter-nodejs" class="py-1 px-5">Node.js</li>
+          <li data-filter=".filter-css" class="py-1 px-5">css/bootstrap</li>
         </ul>
       </div>
     </div>
 
     <div class="row portfolio-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <div class="portfolio-wrap">
-          <img src="./assets/images/portfolio-1.jpg" class="img-fluid" alt="">
-          <div class="portfolio-links">
-            <a href="./assets/images/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-              title="App 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-Vue">
+        <div class="portfolio-img">
+          <a href="https://bolaslien.github.io/miniAttic-front-app/" target="_blank">
+            <img src="./assets/images/portfolio-1.jpg" class="img-fluid" alt="">
+          </a>
+        </div>
+        <div class="portfolio-info">
+          <h4>小閣樓網路商店</h4>
+          <p>可瀏覽商品，將商品加入購物車、註冊/登入會員、送出訂單、會員訂單</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <div class="portfolio-wrap">
-          <img src="./assets/images/portfolio-2.jpg" class="img-fluid" alt="">
-          <div class="portfolio-links">
-            <a href="./assets/images/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-              title="Web 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-Vue">
+        <div class="portfolio-img">
+          <a href="https://bolaslien.github.io/miniAttic-back-app/" target="_blank">
+            <img src="./assets/images/portfolio-1.jpg" class="img-fluid" alt="">
+          </a>
+        </div>
+        <div class="portfolio-info">
+          <h4>小閣樓網路商店-管理系統</h4>
+          <p>可管理網頁內容、上傳圖片、商品上架及訂單管理</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <div class="portfolio-wrap">
-          <img src="./assets/images/portfolio-3.jpg" class="img-fluid" alt="">
-          <div class="portfolio-links">
-            <a href="./assets/images/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-              title="App 2"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-css">
+        <div class="portfolio-img">
+          <a href="https://bolaslien.github.io/css-zen-garden-BolasLien/" class="details-link" title="More Details">
+            <img src="./assets/images/portfolio-1.jpg" class="img-fluid" alt="">
+          </a>
+        </div>
+        <div class="portfolio-info">
+          <h4>Css Zen Garden</h4>
+          <p>自己設計NASA風格的版面。
+            index.html 的標籤結構、內容不可變動。</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <div class="portfolio-wrap">
-          <img src="./assets/images/portfolio-4.jpg" class="img-fluid" alt="">
-          <div class="portfolio-links">
-            <a href="./assets/images/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-              title="Card 2"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-jQuery">
+        <div class="portfolio-img">
+          <a href="https://bolaslien.github.io/js-da-jiang-shi-BolasLien/" class="details-link" title="More Details">
+            <img src="./assets/images/portfolio-1.jpg" class="img-fluid" alt="">
+          </a>
+        </div>
+        <div class="portfolio-info">
+          <h4>打殭屍遊戲</h4>
+          <p>用 jQuery 操作 DOM 的練習作業，自行提升作業難度，實現遊戲狀態機，有關卡、有分數、有排行榜的遊戲。</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <div class="portfolio-wrap">
-          <img src="./assets/images/portfolio-5.jpg" class="img-fluid" alt="">
-          <div class="portfolio-links">
-            <a href="./assets/images/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-              title="Web 2"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-nodejs">
+        <div class="portfolio-img">
+          <a href="https://github.com/BolasLien/line-bible-bot" class="details-link" title="More Details">
+            <img src="./assets/images/portfolio-1.jpg" class="img-fluid" alt="">
+          </a>
+        </div>
+        <div class="portfolio-info">
+          <h4>聖經經文查詢Line機器人</h4>
+          <p>可以單篇搜尋及範圍搜尋經文。</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <div class="portfolio-wrap">
-          <img src="./assets/images/portfolio-6.jpg" class="img-fluid" alt="">
-          <div class="portfolio-links">
-            <a href="./assets/images/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-              title="App 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-css">
+        <div class="portfolio-img">
+          <a href="https://bolaslien.github.io/bs-name-card-BolasLien/" class="details-link" title="More Details">
+            <img src="./assets/images/portfolio-1.jpg" class="img-fluid" alt="">
+          </a>
+        </div>
+        <div class="portfolio-info">
+          <h4>Line機器人網頁名片</h4>
+          <p>用Bootstrap來製作RWD的網頁。</p>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <div class="portfolio-wrap">
-          <img src="./assets/images/portfolio-7.jpg" class="img-fluid" alt="">
-          <div class="portfolio-links">
-            <a href="./assets/images/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-              title="Card 1"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
+      <div class="col-lg-4 col-md-6 portfolio-item filter-Vue">
+        <div class="portfolio-img">
+          <a href="https://bolaslien.github.io/pomodoro/#/" class="details-link" title="More Details">
+            <img src="./assets/images/portfolio-1.jpg" class="img-fluid" alt="">
+          </a>
         </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <div class="portfolio-wrap">
-          <img src="./assets/images/portfolio-8.jpg" class="img-fluid" alt="">
-          <div class="portfolio-links">
-            <a href="./assets/images/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-              title="Card 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
+        <div class="portfolio-info">
+          <h4>番茄鐘</h4>
+          <p>可時間倒數、新增/修改待辦事項、已完成清單、選擇響鈴。</p>
         </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <div class="portfolio-wrap">
-          <img src="./assets/images/portfolio-9.jpg" class="img-fluid" alt="">
-          <div class="portfolio-links">
-            <a href="./assets/images/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-              title="Web 3"><i class="bx bx-plus"></i></a>
-            <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <span>My Portfolio</span>
-        <h2>My Portfolio</h2>
-      </div>
-
-      <ul id="portfolio-flters" class="d-flex justify-content-center">
-        <li data-filter="*" class="filter-active">All</li>
-        <li data-filter=".filter-Vue">Vue</li>
-        <li data-filter=".filter-jQuery">jQuery</li>
-        <li data-filter=".filter-nodejs">Node.js</li>
-        <li data-filter=".filter-css">css/bootstrap</li>
-      </ul>
-
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Vue">
-          <div class="portfolio-img">
-            <a href="https://bolaslien.github.io/miniAttic-front-app/" target="_blank">
-              <img src="./assets/images/portfolio-1.jpg" class="img-fluid" alt="">
-            </a>
-          </div>
-          <div class="portfolio-info">
-            <h4>小閣樓網路商店</h4>
-            <p>可瀏覽商品，將商品加入購物車、註冊/登入會員、送出訂單、會員訂單</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Vue">
-          <div class="portfolio-img">
-            <a href="https://bolaslien.github.io/miniAttic-back-app/" target="_blank">
-              <img src="./assets/images/portfolio-1.jpg" class="img-fluid" alt="">
-            </a>
-          </div>
-          <div class="portfolio-info">
-            <h4>小閣樓網路商店-管理系統</h4>
-            <p>可管理網頁內容、上傳圖片、商品上架及訂單管理</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-css">
-          <div class="portfolio-img">
-            <a href="https://bolaslien.github.io/css-zen-garden-BolasLien/" class="details-link" title="More Details">
-              <img src="./assets/images/portfolio-1.jpg" class="img-fluid" alt="">
-            </a>
-          </div>
-          <div class="portfolio-info">
-            <h4>Css Zen Garden</h4>
-            <p>自己設計NASA風格的版面。
-              index.html 的標籤結構、內容不可變動。</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-jQuery">
-          <div class="portfolio-img">
-            <a href="https://bolaslien.github.io/js-da-jiang-shi-BolasLien/" class="details-link" title="More Details">
-              <img src="./assets/images/portfolio-1.jpg" class="img-fluid" alt="">
-            </a>
-          </div>
-          <div class="portfolio-info">
-            <h4>打殭屍遊戲</h4>
-            <p>用 jQuery 操作 DOM 的練習作業，自行提升作業難度，實現遊戲狀態機，有關卡、有分數、有排行榜的遊戲。</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-nodejs">
-          <div class="portfolio-img">
-            <a href="https://github.com/BolasLien/line-bible-bot" class="details-link" title="More Details">
-              <img src="./assets/images/portfolio-1.jpg" class="img-fluid" alt="">
-            </a>
-          </div>
-          <div class="portfolio-info">
-            <h4>聖經經文查詢Line機器人</h4>
-            <p>可以單篇搜尋及範圍搜尋經文。</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-css">
-          <div class="portfolio-img">
-            <a href="https://bolaslien.github.io/bs-name-card-BolasLien/" class="details-link" title="More Details">
-              <img src="./assets/images/portfolio-1.jpg" class="img-fluid" alt="">
-            </a>
-          </div>
-          <div class="portfolio-info">
-            <h4>Line機器人網頁名片</h4>
-            <p>用Bootstrap來製作RWD的網頁。</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-Vue">
-          <div class="portfolio-img">
-            <a href="https://bolaslien.github.io/pomodoro/#/" class="details-link" title="More Details">
-              <img src="./assets/images/portfolio-1.jpg" class="img-fluid" alt="">
-            </a>
-          </div>
-          <div class="portfolio-info">
-            <h4>番茄鐘</h4>
-            <p>可時間倒數、新增/修改待辦事項、已完成清單、選擇響鈴。</p>
-          </div>
-        </div>
-
       </div>
 
     </div>
