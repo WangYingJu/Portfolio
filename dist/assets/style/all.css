@@ -44864,10 +44864,8 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   #portfolio .portfolio-item .portfolio-img img {
-    max-width: unset;
-    height: unset;
     max-width: 100%;
     height: auto;
   }
