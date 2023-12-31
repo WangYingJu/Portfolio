@@ -44851,6 +44851,26 @@ body {
 
 #portfolio .portfolio-item .portfolio-img img {
   transition: all 0.8s ease-in-out;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  #portfolio .portfolio-item .portfolio-img img {
+    max-width: unset;
+    height: unset;
+    width: auto;
+    max-height: 280px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #portfolio .portfolio-item .portfolio-img img {
+    max-width: unset;
+    height: unset;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 #portfolio .portfolio-item .portfolio-info {

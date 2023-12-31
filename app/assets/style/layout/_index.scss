@@ -82,6 +82,23 @@
 
       img {
         transition: all 0.8s ease-in-out;
+        max-width: 100%;
+        height: auto;
+
+        @include media-breakpoint-up(md) {
+          max-width: unset;
+          height: unset;
+          width: auto;
+          max-height: 280px;
+        }
+
+        @include media-breakpoint-up(xl) {
+          max-width: unset;
+          height: unset;
+          max-width: 100%;
+          height: auto;
+        }
+
       }
     }
 
@@ -107,6 +124,7 @@
       }
     }
   }
+
 }
 
 #contact {
