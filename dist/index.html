@@ -63,13 +63,12 @@
     </button>
     <div class="collapse navbar-collapse flex-grow-0" id="navbarResponsive">
       <nav class="navbar-nav d-lg-flex flex-lg-column align-items-lg-center">
-        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2" href="#home">Home</a>
-        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2" href="#about">About</a>
-        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2"
-          href="#professional-skill">Professional-skill</a>
-        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2" href="#resume">Resume</a>
-        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2" href="#portfolio">Portfolio</a>
-        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2" href="#contact">Contact</a>
+        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2" href="#home">首頁</a>
+        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2" href="#about">關於我</a>
+        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2" href="#professional-skill">專業技能</a>
+        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2" href="#resume">經歷</a>
+        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2" href="#portfolio">作品案例</a>
+        <a class="nav-link js-scroll-trigger fs-4 line-height-19 px-8 py-2" href="#contact">聯繫我</a>
       </nav>
     </div>
   </nav>
@@ -86,7 +85,7 @@
 
   <section id="about" class="mb-24">
     <div class="container">
-      <h3 id="About" class="text-center fs-8 fw-bold lh-base mb-8">About</h3>
+      <h3 id="About" class="text-center fs-8 fw-bold lh-base mb-8">關於我</h3>
       <div class="row">
         <div class="col-lg-4 mb-4 mb-md-2">
           <img src="./assets/images/iriswang.jpg" alt="個人照" class="img-fluid">
@@ -94,8 +93,12 @@
         <div class="col-lg-8 d-flex justify-content-between flex-column py-4 px-8">
           <div>
             <h4 class="fw-bold">網頁開發經驗</h4>
-            <p class="mb-10 mb-md-8 mb-lg-4">擁有 8 年的設計相關經驗，2 年半的網頁開發經驗，精通 HTML、CSS 和 JavaScript，運用 SCSS、Bootstrap、jQuery
-              等開發網頁。目前正在學習前端框架 React，並使用 Git 和 GitHub 進行版本控制。</p>
+            <ul>
+              <li>8 年的設計相關經驗，2 年半的網頁開發經驗。</li>
+              <li>前端技術使用 HTML、CSS、JavaScrip、SCSS、Bootstrap5、EJS、Vue 3 規劃 RWD 響應式網頁，操作 DOM 實現 Event 事件處理及串接 API，並使用 Git 和
+                GitHub 進行版本控制。</li>
+              <li>具備後端 Node.js、Express.js 基礎知識及操作。</li>
+            </ul>
           </div>
           <div class="row mb-10 mb-md-8 mb-lg-4">
             <div class="col-lg-8">
@@ -127,7 +130,7 @@
           <div>
             <h4 class="fw-bold">個人特質</h4>
             <p class="m-0">
-              曾擔任主任及資深網頁設計師，擁有工程師少見的設計背景及協作經驗，在開發團隊中能帶來有效率的溝通，同時對細節的追求也是我的特長之一。為了成為一位專業的工程師，積極參與線上課程自學，不僅在工作期間已完成 20
+              曾擔任主任及資深網頁設計師，擁有工程師少見的設計背景及協作經驗，在開發團隊中能帶來有效率的溝通，並追求使用者介面的細節度、重視使用者體驗。為了成為一位專業的工程師，積極參與線上課程自學，不僅在工作期間已完成 20
               個以上網頁專案，並在待業期間完成了 3 個 JS 開發的網頁遊戲和作品集網站。期望將我的設計經驗和前端技術相結合，持續為前端開發領域帶來更多可能性。</p>
           </div>
         </div>
@@ -137,35 +140,52 @@
 
   <section id="professional-skill" class="bg-light mb-24">
     <div class="container p-8">
-      <h3 class="text-center fs-8 fw-bold lh-base mb-8">Professional Skill</h3>
+      <h3 class="text-center fs-8 fw-bold lh-base mb-8">專業技能</h3>
       <div class="row">
-        <div class="col-lg-6">
-          <ul class="list-unstyled mb-0">
-            <li class="mb-1 mb-md-4"><span class="material-icons text-warning">
-                chevron_right
-              </span>SCSS + Bootstrap5 規劃響應式網頁版型</li>
-            <li class="mb-1 mb-md-4"><span class="material-icons text-warning">
-                chevron_right
-              </span>熟練運用 jQuery Plugin 創造動畫效果</li>
-            <li class="mb-1 mb-md-4 d-flex align-items-center"><span class="material-icons text-warning">
-                chevron_right
-              </span>使用 EJS 規劃多頁式網站</li>
-            <li class="mb-1 mb-md-4 d-flex align-items-center"><span class="material-icons text-warning">
-                chevron_right
-              </span>具備後端 Node.js、Express.js 基礎知識及操作</li>
+        <div class="col-lg-4">
+          <h4 class="text-warning mt-4">網頁設計</h4>
+          <p>可實現網頁版面配置及設計</p>
+          <ul>
+            <li>配合 UI / UX 設計師，切出符合需要的 Layout</li>
+            <li>熟悉 HTML 及 CSS</li>
+            <li>使用 CSS 預處理器 Sass / SCSS 提升開發效率及延展性</li>
+            <li>熟悉 CSS 框架 Bootstrap5</li>
+            <li>熟悉 RWD 響應式網頁設計 </li>
           </ul>
         </div>
-        <div class="col-lg-6">
-          <ul class="list-unstyled mb-0">
-            <li class="mb-1 mb-md-4"><span class="material-icons text-warning">
-                chevron_right
-              </span>原生 JavaScript 製作網頁互動遊戲及特效</li>
-            <li class="mb-1 mb-md-4"><span class="material-icons text-warning">
-                chevron_right
-              </span>操作 Git 與 GitHub 進行版本控制</li>
-            <li class="mb-1 mb-md-4"><span class="material-icons text-warning">
-                chevron_right
-              </span>設計工具使用 Figma、Sketch、Photoshop</li>
+        <div class="col-lg-4">
+          <h4 class="text-warning mt-4">前端技術</h4>
+          <p>操作 DOM 實現 Event 事件處理、Async / Await、fetch 介接 API 等</p>
+          <ul>
+            <li>使用 JavaScript ES6</li>
+            <li>運用 jQuery 實現動畫效果</li>
+            <li>有過 EJS 樣板引擎規劃多頁式網站經驗</li>
+            <li>運用 Ajax 串接 API</li>
+            <li>使用 Vue3 options API</li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h4 class="text-warning mt-4">後端技術</h4>
+          <p>了解後端基礎知識及操作</p>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>RESTful API</li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h4 class="text-warning mt-4">資料庫</h4>
+          <p>了解資料庫基礎知識與操作</p>
+          <ul>
+            <li>MongoDB （ CRUD Operations ）</li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h4 class="text-warning mt-4">版本控制</h4>
+          <p>了解 Linux 指令、版本控制與操作</p>
+          <ul>
+            <li>操作 Git 進行版本控制及協作</li>
+            <li>原始碼代管服務平台使用 GitHub</li>
           </ul>
         </div>
       </div>
@@ -174,7 +194,7 @@
 
   <section id="resume" class="mb-24">
     <div class="container">
-      <h3 class="text-center fs-8 fw-bold lh-base mb-8">Resume</h3>
+      <h3 class="text-center fs-8 fw-bold lh-base mb-8">經歷</h3>
       <div class="row">
         <div class="col-lg-6">
           <h3 class="resume-title mt-0 mt-md-0 mt-lg-10">職業訓練</h3>
@@ -182,8 +202,8 @@
             <h4 class="text-warning">2023 網頁全端開發</h4>
             <h5 class="badge text-dark fs-4 bg-light  px-3 py-1">2023/6 - 至今</h5>
             <p><em>udemy</em></p>
-            <p>為了成為專業工程師，不只輸入知識外，也開始搭配輸出練習。該課程已完成 Advanced JavaScript、Git、Node.js、Express.js，目前正在積極學習 React
-              中；課程中完成 3 個網頁遊戲、1
+            <p>為了成為專業工程師，不只輸入知識外，也開始搭配輸出練習。該課程已完成 Advanced JavaScript、Git、Node.js、Express.js，目前正在積極學習前端框架；課程中完成 3
+              個網頁遊戲、1
               個作品集網站。</p>
           </div>
           <div class="resume-item px-5 pb-5 border-gray border-2 border-start position-relative ms-4">
@@ -253,7 +273,7 @@
 
   <section id="portfolio" class="mb-24">
     <div class="container">
-      <h3 class="text-center fs-8 fw-bold lh-base mb-8">Portfolio</h3>
+      <h3 class="text-center fs-8 fw-bold lh-base mb-8">作品案例</h3>
 
       <div class="row aos-init aos-animate" data-aos="fade-up">
         <div class="col-lg-12 d-flex justify-content-center">
@@ -262,7 +282,6 @@
             <li data-filter=".filter-BS5SCSS" class="py-1 px-1 px-md-8 px-lg-4">BS5/SCSS</li>
             <li data-filter=".filter-jQuery" class="py-1 px-1 px-md-8 px-lg-4">jQuery</li>
             <li data-filter=".filter-js" class="py-1 px-1 px-md-8 px-lg-4">JavaScript</li>
-            <li data-filter=".filter-EJS" class="py-1 px-1 px-md-8 px-lg-4">EJS</li>
           </ul>
         </div>
       </div>
@@ -307,19 +326,6 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-jQuery">
-          <div class="portfolio-img">
-            <a href="https://wangyingju.github.io/Dragon-Boat-Festival-Celebrate/" target="_blank"
-              class="d-flex justify-content-center align-items-center">
-              <img src="./assets/images/portfolio-4.jpg" alt="《艾肯娛樂》端午活動頁">
-            </a>
-          </div>
-          <div class="portfolio-info">
-            <h4>《艾肯娛樂》端午活動頁</h4>
-            <p>介接 Swiper.js、AOS.js、wow.js，用 jQuery 實現頁籤按鈕點擊切換內容的效果</p>
-          </div>
-        </div>
-
         <div class="col-lg-4 col-md-6 portfolio-item filter-BS5SCSS filter-jQuery">
           <div class="portfolio-img">
             <a href="https://wangyingju.github.io/Wangchuan-Fenghua-Lu-CCB-PreOrder-Hub/" target="_blank"
@@ -359,19 +365,6 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-js">
-          <div class="portfolio-img">
-            <a href="https://wangyingju.github.io/Ghost2-VIP-Gift-Event-Page/" target="_blank"
-              class="d-flex justify-content-center align-items-center">
-              <img src="./assets/images/portfolio-8.jpg" alt="《倩女幽魂 II》VIP 送禮活動頁">
-            </a>
-          </div>
-          <div class="portfolio-info">
-            <h4>《倩女幽魂 II》VIP 送禮活動頁</h4>
-            <p>介接 paroller.js、WOW.js，用 js 操作 DOM 導入音樂播放功能</p>
-          </div>
-        </div>
-
         <div class="col-lg-4 col-md-6 portfolio-item filter-BS5SCSS">
           <div class="portfolio-img">
             <a href="https://wangyingju.github.io/I-Flirt_Halloween-Event-Page/" target="_blank"
@@ -398,19 +391,6 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-BS5SCSS filter-EJS">
-          <div class="portfolio-img">
-            <a href="https://wangyingju.github.io/Glasses_e-commerce/" target="_blank"
-              class="d-flex justify-content-center align-items-center">
-              <img src="./assets/images/portfolio-17.jpg" alt="眼鏡電商網站">
-            </a>
-          </div>
-          <div class="portfolio-info">
-            <h4>眼鏡電商網站</h4>
-            <p>第一次使用 SCSS + Bootstrap5 + EJS 規劃響應式網頁版型，使用 Gulp 部署</p>
-          </div>
-        </div>
-
         <div class="col-lg-4 col-md-6 portfolio-item filter-jQuery">
           <div class="portfolio-img">
             <a href="https://wangyingju.github.io/Miracle-Mirror-Official-Website/" target="_blank"
@@ -434,45 +414,6 @@
           <div class="portfolio-info">
             <h4>《雲海》官網</h4>
             <p>介接 particles.js、parallax.js，用 jQuery 呈現角色選取效果，與 AE 動畫師溝通角色動畫腳本</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-BS5SCSS filter-jQuery">
-          <div class="portfolio-img">
-            <a href="https://wangyingju.github.io/9th-Celebrate/" target="_blank"
-              class="d-flex justify-content-center align-items-center">
-              <img src="./assets/images/portfolio-14.jpg" alt="《艾肯娛樂》9 週年活動頁">
-            </a>
-          </div>
-          <div class="portfolio-info">
-            <h4>《艾肯娛樂》9 週年活動頁</h4>
-            <p>用 SCSS，用 jQuery 呈現網頁自動跳轉功能，與 AE 動畫師溝通首頁影片腳本</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-jQuery">
-          <div class="portfolio-img">
-            <a href="https://wangyingju.github.io/ChatTalker_e-commerce/" target="_blank"
-              class="d-flex justify-content-center align-items-center">
-              <img src="./assets/images/portfolio-18.jpg" alt="ChatTalker 電商網站">
-            </a>
-          </div>
-          <div class="portfolio-info">
-            <h4>ChatTalker 電商網站</h4>
-            <p>第一次使用 jQuery 來切換人數選項及切換常見問題集的手風琴效果</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-jQuery">
-          <div class="portfolio-img">
-            <a href="https://wangyingju.github.io/Revelation-Online-1th-Celebrate/" target="_blank"
-              class="d-flex justify-content-center align-items-center">
-              <img src="./assets/images/portfolio-16.jpg" alt="《天諭》一週年活動頁">
-            </a>
-          </div>
-          <div class="portfolio-info">
-            <h4>《天諭》一週年活動頁</h4>
-            <p>用 animate 呈現簡易動畫及 jQuery 來呈現 hover 效果</p>
           </div>
         </div>
 
