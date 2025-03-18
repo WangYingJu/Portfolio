@@ -44779,8 +44779,20 @@ body {
   background: url(../images/home.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 70vh;
+  height: 50vh;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero {
+    height: 35vh;
+  }
 }
 
 #about .personal-photo {
